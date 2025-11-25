@@ -1,6 +1,7 @@
-# 🚀 JobFit Analyzer - AI-Powered Resume Screening Tool
+# 🚀 JobFit Analyzer - AI-POWERED RESUME SCREENING TOOL
 
-JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and matches them against job descriptions using keyword analysis. It provides candidates with an instant compatibility score and identifies missing skills.
+JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and matches them against job descriptions using keyword analysis.
+It provides candidates with an instant compatibility score and identifies missing skills.
 
 ## 🤜🤛 Project_Structure:-
 ```
@@ -62,13 +63,13 @@ ResumeAnalyzer
 ```
                 
 
-## 🌟 Features
-* **Smart Parsing:** Extracts text from both PDF (Apache PDFBox) and Word (Apache POI) documents.
-* **Role-Based Analysis:** Pre-configured rule sets for Java, Data Analysis, Web Dev, Product Management, and DevOps.
-* **Gap Analysis:** Instantly identifies missing keywords required for the role.
-* **Persistent History:** Automatically saves all scan results to a local database.
-* **Multithreaded:** Uses asynchronous processing for performance monitoring.
-* **Modern UI:** Built with React, Tailwind CSS, and Shadcn UI.
+## 🌟 FEATURES
+* Smart Parsing: Extracts text from both PDF (Apache PDFBox) and Word (Apache POI) documents.
+* Role-Based Analysis: Pre-configured rule sets for Java, Data Analysis, Web Dev, Product Management, and DevOps.
+* Gap Analysis: Instantly identifies missing keywords required for the role.
+* Persistent History: Automatically saves all scan results to a local database.
+* Multithreaded: Uses asynchronous processing for performance monitoring.
+* Modern UI: Built with React, Tailwind CSS, and Shadcn UI.
 
 ## USER_INTERFACE:-
 <img width="1256" height="636" alt="image" src="https://github.com/user-attachments/assets/36f2655e-a35a-4330-946e-3ca5b8249429" />
