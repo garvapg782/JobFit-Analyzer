@@ -10,6 +10,18 @@ JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and m
 * **Multithreaded:** Uses asynchronous processing for performance monitoring.
 * **Modern UI:** Built with React, Tailwind CSS, and Shadcn UI.
 
+## USER_INTERFACE:-
+<img width="1256" height="636" alt="image" src="https://github.com/user-attachments/assets/36f2655e-a35a-4330-946e-3ca5b8249429" />
+
+## DATABASE:-
+<img width="1460" height="740" alt="image" src="https://github.com/user-attachments/assets/dc360908-0f84-4145-85b4-933f59b6894f" />
+
+## RESULT_PAGE:-
+<img width="1465" height="745" alt="image" src="https://github.com/user-attachments/assets/f93297be-c95a-4bd1-abf4-78c89b6c69f0" />
+
+
+
+
 ## 🛠️ Tech Stack
 * **Backend:** Java 17, Spring Boot, Hibernate (JPA), H2 Database.
 * **Frontend:** React (Vite), TypeScript, Tailwind CSS.
@@ -27,3 +39,4 @@ JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and m
 cd frontend
 npm install
 npm run dev
+
