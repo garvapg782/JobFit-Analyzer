@@ -2,6 +2,8 @@
 
 JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and matches them against job descriptions using keyword analysis. It provides candidates with an instant compatibility score and identifies missing skills.
 
+## 🤜🤛 Project_Structure:-
+
 ## 🌟 Features
 * **Smart Parsing:** Extracts text from both PDF (Apache PDFBox) and Word (Apache POI) documents.
 * **Role-Based Analysis:** Pre-configured rule sets for Java, Data Analysis, Web Dev, Product Management, and DevOps.
@@ -18,8 +20,6 @@ JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and m
 
 ## RESULT_PAGE:-
 <img width="1465" height="745" alt="image" src="https://github.com/user-attachments/assets/f93297be-c95a-4bd1-abf4-78c89b6c69f0" />
-
-
 
 
 ## 🛠️ Tech Stack
