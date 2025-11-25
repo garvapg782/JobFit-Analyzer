@@ -4,6 +4,63 @@ JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and m
 
 ## 🤜🤛 Project_Structure:-
 
+ResumeAnalyzer/
+├── .gitignore
+├── README.md
+├── pom.xml                         # Backend Dependencies (Maven)
+├── src/
+│   ├── main/
+│   │   ├── java/com/jobfitanalyzer/
+│   │   │   ├── JobFitAnalyzerApplication.java  # Main Entry Point
+│   │   │   ├── controller/
+│   │   │   │   ├── HomeController.java
+│   │   │   │   └── ResumeController.java       # API Endpoints
+│   │   │   ├── exception/
+│   │   │   │   └── InvalidResumeException.java
+│   │   │   ├── model/
+│   │   │   │   ├── Resume.java
+│   │   │   │   └── ScanHistory.java            # DB Entity
+│   │   │   ├── repository/
+│   │   │   │   ├── resumeRepository.java
+│   │   │   │   └── ScanHistoryRepository.java  # DB Operations
+│   │   │   └── service/
+│   │   │       ├── ResumeService.java          # Core Logic
+│   │   │       └── PerformanceMonitor.java     # Multithreading
+│   │   └── resources/
+│   │       ├── application.properties          # DB Config
+│   │       ├── static/
+│   │       │   └── index.html
+│   │       └── templates/
+│   └── test/
+│       └── java/com/jobfitanalyzer/
+│           └── JobFitAnalyzerApplicationTests.java
+│
+└── frontend/                           # Frontend (React + Vite)
+    ├── package.json                    # JS Dependencies
+    ├── vite.config.ts
+    ├── tailwind.config.js
+    ├── postcss.config.js
+    ├── tsconfig.json
+    ├── public/
+    │   └── vite.svg
+    └── src/
+        ├── main.tsx
+        ├── App.tsx                     # Main Frontend Logic
+        ├── App.css
+        ├── index.css                   # Global Styles (Tailwind)
+        └── components/
+            ├── FileUpload.tsx
+            ├── ResultsPage.tsx
+            ├── ScannerPage.tsx
+            ├── ScoreCircle.tsx
+            ├── figma/                  # (Optional backup folder)
+            └── ui/                     # UI Components (Shadcn)
+                ├── button.tsx
+                ├── select.tsx
+                ├── tabs.tsx
+                └── textarea.tsx
+                
+
 ## 🌟 Features
 * **Smart Parsing:** Extracts text from both PDF (Apache PDFBox) and Word (Apache POI) documents.
 * **Role-Based Analysis:** Pre-configured rule sets for Java, Data Analysis, Web Dev, Product Management, and DevOps.
