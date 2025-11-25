@@ -3,8 +3,8 @@
 JobFit Analyzer is a Full-Stack application that parses resumes (PDF/DOCX) and matches them against job descriptions using keyword analysis. It provides candidates with an instant compatibility score and identifies missing skills.
 
 ## 🤜🤛 Project_Structure:-
-
-ResumeAnalyzer/
+```
+ResumeAnalyzer
 ├── .gitignore
 ├── README.md
 ├── pom.xml                         # Backend Dependencies (Maven)
@@ -59,6 +59,7 @@ ResumeAnalyzer/
                 ├── select.tsx
                 ├── tabs.tsx
                 └── textarea.tsx
+```
                 
 
 ## 🌟 Features
