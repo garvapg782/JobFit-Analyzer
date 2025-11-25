@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resume Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .container {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .score {
+            font-size: 20px;
+            color: #007bff;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #4a148c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="result-box">
+    <h2 th:text="${message}"></h2>
+    <h1>Match Score: <span th:text="${score}"></span>%</h1>
+</div>
+
+<div class="missing-skills-box" th:if="${not #lists.isEmpty(missingSkills)}">
+    <h3>⚠️ Missing Skills detected:</h3>
+    <p>Consider adding these keywords to your resume:</p>
+    <ul>
+        <li th:each="skill : ${missingSkills}" th:text="${skill}" style="color: red;"></li>
+    </ul>
+</div>
+
+<div th:if="${#lists.isEmpty(missingSkills)}" style="color: green;">
+    <h3>🎉 Perfect Match! You have all the required skills.</h3>
+</div>
+
+<a href="/upload">Upload Another Resume</a>
+</body>
+</html>

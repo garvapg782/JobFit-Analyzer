@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>JobFit Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, textarea { width: 300px; margin: 10px; padding: 8px; }
+        button { padding: 10px 20px; background: #2b7de9; color: white; border: none; cursor: pointer; }
+        button:hover { background: #1a5bb8; }
+    </style>
+</head>
+<body>
+<h2>JobFit Analyzer</h2>
+<form method="post" action="/api/resume/upload" enctype="multipart/form-data">
+    <label>Upload Resume (PDF):</label><br>
+    <input type="file" name="file" accept=".pdf" required><br><br>
+    <button type="submit">Analyze Resume</button>
+</form>
+</body>
+</html>
